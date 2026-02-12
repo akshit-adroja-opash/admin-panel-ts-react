@@ -1,0 +1,55 @@
+.modern-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0f0f0;
+    min-width: 240px;
+    cursor: pointer;
+}
+
+.modern-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-label {
+    color: #64748b;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-amount {
+    color: #1e293b;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card-trend {
+    font-size: 0.75rem;
+    color: #10b981; /* Green for positive trend */
+    display: block;
+    margin-top: 8px;
+}
+
+.icon-wrapper {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.modern-card:hover .icon-wrapper {
+    transform: scale(1.1) rotate(-5deg);
+}
